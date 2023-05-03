@@ -63,6 +63,12 @@ def save_students
     end
     file.close
   end
+
+  def print_student_list
+    @students.each do |student|
+      puts "#{student[:name]} (#{student[:cohort]} cohort)"
+    end
+  end
     
 def print_footer
     puts "Overall, we have #{students.count} great students"
