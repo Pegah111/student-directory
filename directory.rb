@@ -11,7 +11,7 @@ def print_menu
   def interactive_menu
     loop do
         print_menu
-        process(gets.chomp)
+        process(STDIN.gets.chomp)
     end
 end
 
